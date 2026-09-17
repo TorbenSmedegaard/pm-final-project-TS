@@ -76,4 +76,4 @@ The platform's role shrinks to content hosting.
 
 Instead of receiving a recommendation within seconds, they must research, compare, validate, and shortlist content themselves.
 - **The evidence, a specific quote or behavior from the research that proves this:** "I can no longer trust StreamLine to help me find something worth watching, so I have to do the work myself."
-- **Your journey map, a shareable link, or the map file you committed (e.g. journey-map.html):** 02-discovery/Journey map.png
+- **Your journey map, a shareable link, or the map file you committed (e.g. journey-map.html):** https://github.com/TorbenSmedegaard/pm-final-project-TS/blob/main/02-discovery/Journey%20map.png
