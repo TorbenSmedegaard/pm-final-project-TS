@@ -1,53 +1,27 @@
-# Problem Hook & Value Proposition: [StreamLine / RouteLogic / your initiative]
+# Problem Hook & Value Proposition, Module 1
 
-> **Module 1 · ★ Deliverable 1.** Repo file `01-product-thinking/problem-hook.md` — part of your submission.
-> Do the lab in the **Module 1 · Exercise 2 Guide** (linked from the Module 1 deck), then click **⬇ Download .md** — it saves as this exact file. Commit it here.
-> It becomes the **Problem, Value & Hypothesis** slide of your Module 6 final deck. (Your Module 1 · Exercise 1 discovery map lands in `strategic-map.md`.)
+- **Scenario:** StreamLine Spotlight (B2C)
 
-## 1. Chosen scenario
+## Strategic crisis
+StreamLine risks becoming the biggest content library that nobody can easily navigate, causing high-value subscribers to migrate to competitors that offer a better discovery experience.
 
-**Path:** _StreamLine Spotlight (B2C) · RouteLogic Velocity (B2B) · my own initiative_
+## Moment of misery
+Instead of discovering great films inside StreamLine, users spend more time searching for recommendations outside the platform than actually watching content.
 
-_One line on why you picked it._
+## Problem hook
+We must reverse rising churn among our most valuable viewers by fixing the discovery experience that drives them outside StreamLine.
 
-## 2. The strategic crisis
+## Value proposition
+For passionate film lovers, we will provide trusted, expert-led content discovery because StreamLine must strengthen engagement before  competitors capture this audience permanently..
 
-_The big-picture business risk. If the company does nothing for 12 months, what happens to its market position?_
+## Cold-read self-review
+Yes. The case explicitly states:
 
-> If we do nothing for 12 months, the company will…
+Engagement has plateaued.
+Churn is rising.
+Niche competitors are gaining ground.
+StreamLine's historical competitive advantage is becoming less effective.
 
-## 3. The moment of misery
+This impacts revenue growth, retention, and market leadership.
 
-_The specific point where the product fails the user, forcing a manual workaround (Google, spreadsheets, group texts, a competitor)._
-
-> The user is currently forced to…
-
-## 4. Problem hook
-
-_One urgent sentence fusing the business risk and the user pain, your pitch for why this is the most important thing to work on right now._
-
-> We must solve [business risk] by addressing [user pain]…
-
-## 5. Value proposition
-
-_Who it's for, the new value, and why it's urgent to launch now._
-
-> For **[who]**, we will **[value]** because **[urgent why]**.
-
-## 6. Cold-read self-review
-
-_Read your hook back as a skeptical stakeholder. If you don't feel the urgency, that's your data._
-
-| Question | Your answer |
-|---|---|
-| Is the business risk high-stakes enough to justify a new initiative? | _____ |
-| Is the moment of misery systemic, or just an edge case? | _____ |
-| Does the value proposition actually remove the obstacle? | _____ |
-
-## 7. Finalized hypothesis _(complete in Module 3)_
-
-> Based on [qual + quant evidence], I believe that [solving X] for [persona] will result in [outcome], as measured by a [X%] change in [success metric]. I will protect [guardrail metric] and make a go/no-go decision after [decision window].
-
-## Link to full artifact
-
-_[link to your Problem Hook Builder export]_
+And yes, the misery is systemic. Discovery becomes harder as the catalogue grows, which is not an isolated issue. It is a structural consequence of the product strategy of maximizing content volume. Therefore the problem is likely to affect a meaningful segment of engaged users, especially those who value content quality and discovery.
