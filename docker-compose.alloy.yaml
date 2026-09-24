@@ -1,0 +1,12 @@
+services:
+  docs:
+    image: node:22-bookworm
+    working_dir: /workspace/.alloy
+    network_mode: host
+    environment:
+      IS_ALLOY: ${IS_ALLOY:-false}
+      DOCS_ROOT: /workspace
+      PORT: "3000"
+    volumes:
+      - .:/workspace
+    command: bash -lc "npm install --no-audit --no-fund && npm start"

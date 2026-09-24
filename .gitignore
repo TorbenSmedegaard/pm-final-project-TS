@@ -11,3 +11,4 @@ Thumbs.db
 
 # Drafts you don't want public yet
 *.local.md
+node_modules/
