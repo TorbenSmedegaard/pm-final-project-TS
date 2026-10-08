@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07162C">
+<title>StreamLine Spotlight — Final Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antarctican+Mono:wght@400;500&family=Saans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07162C;--fg:#fff;--muted:#fff;--orange:#fb923c;--cyan:#22d3ee;--teal:#34d399;--blue:#60a5fa;--violet:#a78bfa;--pink:#f472b6;--line:rgba(251,146,60,.25);--panel:rgba(255,255,255,.055);--panel2:rgba(255,255,255,.035)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-snap-type:y mandatory;background:var(--bg)}body{margin:0;background:var(--bg);color:var(--fg);font-family:Saans,Arial,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 85% 10%,rgba(34,211,238,.08),transparent 30%),radial-gradient(circle at 12% 86%,rgba(167,139,250,.08),transparent 32%);z-index:0}.progress{position:fixed;z-index:30;inset:0 auto auto 0;width:0;height:4px;background:linear-gradient(90deg,var(--orange),var(--pink),var(--cyan));box-shadow:0 0 18px rgba(251,146,60,.75)}section{position:relative;z-index:1;min-height:100vh;height:100vh;scroll-snap-align:start;overflow:hidden;display:flex;align-items:center;padding:clamp(28px,4vw,64px) clamp(30px,6vw,96px)}.wrap{width:min(1480px,100%);margin:auto;max-height:92vh}.eyebrow,.mono{font-family:"Antarctican Mono",monospace}.eyebrow{text-transform:uppercase;letter-spacing:.12em;color:#fdba74;font-size:clamp(11px,1vw,15px);margin-bottom:12px}.kicker{font-family:"Antarctican Mono",monospace;color:rgba(255,255,255,.7);font-size:12px}h1,h2,h3,h4{margin:0;font-family:Saans,Arial,sans-serif}h1{font-size:clamp(46px,6.4vw,104px);line-height:.94;letter-spacing:-.055em;max-width:1200px}h2{font-size:clamp(34px,4.1vw,66px);line-height:1;letter-spacing:-.04em}h3{font-size:clamp(18px,1.6vw,28px);line-height:1.08}h4{font-size:15px}p{line-height:1.42;margin:.45em 0}.lead{font-size:clamp(18px,2vw,30px);line-height:1.34;color:rgba(255,255,255,.88);max-width:1050px}.accent{color:var(--orange)}.cyan{color:var(--cyan)}.teal{color:var(--teal)}.violet{color:var(--violet)}.muted{color:rgba(255,255,255,.7)}.grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.card{border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));padding:clamp(16px,1.7vw,26px);box-shadow:0 16px 44px rgba(0,0,0,.16)}.hero-card{background:linear-gradient(145deg,rgba(251,146,60,.13),rgba(34,211,238,.055) 55%,rgba(167,139,250,.06));box-shadow:0 24px 70px rgba(0,0,0,.28)}.metric{font-family:"Antarctican Mono",monospace;font-size:clamp(28px,3vw,54px);font-weight:500;line-height:1;color:var(--orange)}.label{font-family:"Antarctican Mono",monospace;text-transform:uppercase;letter-spacing:.09em;font-size:11px;color:#fdba74}.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);border-radius:999px;padding:8px 12px;font-size:13px}.pills{display:flex;gap:8px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;background:var(--orange);color:#07162C;font-weight:900;border-radius:999px;padding:13px 19px;box-shadow:0 12px 30px rgba(251,146,60,.24);transition:.2s}.btn:hover,.btn:focus{transform:translateY(-2px);outline:2px solid white;outline-offset:3px}.link{color:white;text-underline-offset:4px;overflow-wrap:anywhere}.topline{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:24px}.num{font:500 12px "Antarctican Mono",monospace;color:rgba(255,255,255,.45)}.callout{border-left:4px solid var(--orange);padding:14px 18px;background:rgba(251,146,60,.08);border-radius:0 14px 14px 0}.tight p,.tight li{font-size:clamp(12px,1vw,15px)}ul{padding-left:18px;margin:8px 0}li{margin:5px 0;line-height:1.35}.roadmap .card{min-height:246px}.roadmap h3{margin-bottom:10px}.roadmap .now{border-color:rgba(52,211,153,.5)}.roadmap .next{border-color:rgba(96,165,250,.5)}.roadmap .later{border-color:rgba(167,139,250,.5)}.roadmap .cut{border-color:rgba(244,114,182,.5)}.journey{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:18px}.step{min-height:125px;padding:15px;border-radius:14px;background:rgba(255,255,255,.045);border-top:3px solid var(--cyan);font-size:13px}.step.misery{border-color:var(--pink);background:rgba(244,114,182,.1)}.step b{display:block;margin-bottom:5px}.vs{display:grid;grid-template-columns:1fr 54px 1fr;align-items:stretch;gap:12px}.vsmark{display:grid;place-items:center;font:500 13px "Antarctican Mono",monospace;color:#fdba74}.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.rule{padding:14px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}.rule.ship{border-color:rgba(52,211,153,.5)}.rule.iterate{border-color:rgba(96,165,250,.5)}.rule.kill{border-color:rgba(244,114,182,.5)}.dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.dash{padding:18px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid var(--line)}.dash .metric{font-size:clamp(22px,2.2vw,38px)}.dots{position:fixed;z-index:25;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:9px}.dot{width:10px;height:10px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:transparent;padding:0;cursor:pointer}.dot.active{background:var(--orange);border-color:var(--orange);transform:scale(1.25)}.slide-tag{position:absolute;left:24px;bottom:16px;font:400 10px "Antarctican Mono",monospace;letter-spacing:.08em;color:rgba(255,255,255,.42)}details{border:1px solid rgba(255,255,255,.13);border-radius:14px;background:rgba(7,22,44,.96)}summary{cursor:pointer;padding:12px 15px;font:500 12px "Antarctican Mono",monospace;color:#fdba74;list-style:none}summary::-webkit-details-marker{display:none}summary:after{content:" +"}details[open] summary:after{content:" −"}.detail-body{padding:0 16px 16px;max-height:48vh;overflow:auto;font-size:13px;color:rgba(255,255,255,.86);white-space:pre-line}.modal-detail[open]{position:fixed;z-index:50;inset:5vh 8vw;box-shadow:0 30px 100px rgba(0,0,0,.6);overflow:hidden}.modal-detail[open] .detail-body{max-height:78vh}.meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px}.meta span{font:400 12px "Antarctican Mono",monospace;color:rgba(255,255,255,.62)}.meta strong{color:#fff}.bar{height:7px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--orange),var(--cyan));border-radius:inherit}.quote{font-size:clamp(19px,1.8vw,28px);line-height:1.28}.cover-links{margin-top:28px;display:grid;gap:10px;max-width:780px}.cover-links a{display:flex;justify-content:space-between;gap:20px;padding:12px 15px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.04);color:white;text-decoration:none;font:400 12px "Antarctican Mono",monospace}.cover-links a:hover{border-color:var(--orange)}
+@media(max-width:900px){section{height:auto;min-height:100vh;overflow:visible}.g2,.g3,.g4,.dashboard,.rules,.journey{grid-template-columns:1fr}.vs{grid-template-columns:1fr}.vsmark{min-height:30px}.dots{display:none}.wrap{max-height:none}.roadmap .card{min-height:0}h1{font-size:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media print{.dots,.progress{display:none}section{page-break-after:always;height:100vh}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div><nav class="dots" id="dots" aria-label="Slide navigation"></nav>
+<main>
+<section id="cover" aria-label="Cover"><div class="wrap"><div class="eyebrow">Product School · Final Project</div><h1>StreamLine Spotlight:<br><span class="accent">Helping Viewers Discover Content They Love</span></h1><p class="lead">StreamLine Spotlight helps viewers cut through recommendation fatigue by offering trusted, human-curated content recommendations.</p><div class="meta"><span><strong>Torben Smedegaard</strong> - PM Cohort - September 2026</span></div><div class="cover-links"><a href="https://github.com/TorbenSmedegaard/pm-final-project-TS" target="_blank" rel="noopener noreferrer"><span>Repository</span><span>github.com/TorbenSmedegaard/pm-final-project-TS ↗</span></a><a href="https://streamline-spotlight-prototype.vercel.app/" target="_blank" rel="noopener noreferrer"><span>Prototype</span><span>streamline-spotlight-prototype.vercel.app ↗</span></a></div></div><span class="slide-tag">01 / COVER</span></section>
+
+<section id="strategy" aria-label="Slide 5 Strategy"><div class="wrap"><div class="topline"><div><div class="eyebrow">Slide 5 · Strategy</div><h2>Fix discovery before <span class="accent">valuable viewers leave.</span></h2></div><div class="num">MODULES 1 + 3</div></div><div class="grid g2"><div class="card hero-card"><div class="label">Strategic crisis</div><p class="quote">StreamLine risks becoming the biggest content library that nobody can easily navigate, causing high-value subscribers to migrate to competitors that offer a better discovery experience.</p><div class="callout"><div class="label">Moment of misery</div><p>Instead of discovering great films inside StreamLine, users spend more time searching for recommendations outside the platform than actually watching content.</p></div></div><div class="grid"><div class="card"><div class="label">Value proposition</div><p>StreamLine Spotlight introduces an editorially curated content rail that highlights high-quality and overlooked titles selected by trusted curators. Instead of overwhelming viewers with algorithmic recommendations, Spotlight provides a focused and credible discovery experience that helps users quickly find something worth watching. This increases confidence in content discovery, reduces browsing frustration, and improves viewer retention.</p></div><div class="card"><div class="label">Evidence at a glance</div><div class="dashboard"><div><div class="metric">29%</div><small>Homepage → playback</small></div><div><div class="metric">11%</div><small>30+ minute session</small></div><div><div class="metric">+15pp</div><small>Target M1 retention</small></div></div></div></div></div><div class="callout" style="margin-top:16px"><div class="label">Data-backed hypothesis</div><p>Based on Only 29% of homepage visitors start playback. Only 11% of visitors reach a 30+ minute session (down from 19%). Spotlight cohorts retain 12-15 percentage points more users at Month 1 than Full-Library cohorts. Wanderers show the largest improvement from Spotlight exposure, with 22 percentage points lower churn than non-exposed Wanderers., we believe that solving Users cannot confidently discover worthwhile content inside StreamLine and therefore leave the platform to find recommendations elsewhere. for The Disillusioned Curated Seeker: a passionate viewer who wants trusted recommendations and hidden gems but no longer trusts StreamLine's discovery experience. will result in Increase retention by making StreamLine the trusted destination for content discovery rather than just a playback destination., as measured by Increase Month 1 retention among Wanderers exposed to Spotlight-style curation from 64% to 79% (+15 percentage points).</p></div><details class="modal-detail"><summary>Open full Strategy source content</summary><div class="detail-body">Problem Hook &amp; Value Proposition, Module 1
+
+Scenario: StreamLine Spotlight (B2C)
+
+Strategic crisis
+StreamLine risks becoming the biggest content library that nobody can easily navigate, causing high-value subscribers to migrate to competitors that offer a better discovery experience.
+
+Moment of misery
+Instead of discovering great films inside StreamLine, users spend more time searching for recommendations outside the platform than actually watching content.
+
+Problem hook
+We must reverse rising churn among our most valuable viewers by fixing the discovery experience that drives them outside StreamLine.
+
+Value proposition
+For passionate film lovers, we will provide trusted, expert-led content discovery because StreamLine must strengthen engagement before  competitors capture this audience permanently..
+
+Cold-read self-review
+Yes. The case explicitly states:
+
+Engagement has plateaued.
+Churn is rising.
+Niche competitors are gaining ground.
+StreamLine's historical competitive advantage is becoming less effective.
+
+This impacts revenue growth, retention, and market leadership.
+
+And yes, the misery is systemic. Discovery becomes harder as the catalogue grows, which is not an isolated issue. It is a structural consequence of the product strategy of maximizing content volume. Therefore the problem is likely to affect a meaningful segment of engaged users, especially those who value content quality and discovery.
+
+Evidence
+Qualitative (M2): "The 'Because you watched' row is a joke." "I trust a recommendation from a friend more than the algorithm." "I open the app, scroll for like twenty minutes, and close it without watching anything."
+Quantitative (M3): Only 29% of homepage visitors start playback. Only 11% of visitors reach a 30+ minute session (down from 19%). Spotlight cohorts retain 12-15 percentage points more users at Month 1 than Full-Library cohorts. Wanderers show the largest improvement from Spotlight exposure, with 22 percentage points lower churn than non-exposed Wanderers.
+
+Persona &amp; problem
+Role: The Disillusioned Curated Seeker: a passionate viewer who wants trusted recommendations and hidden gems but no longer trusts StreamLine's discovery experience.
+Goal: Discover relevant, high-quality content that matches their tastes, mood, and viewing intent.
+Friction: Recommendations feel repetitive and generic, causing browsing fatigue and driving users to external sources for discovery.
+Problem you are solving: Users cannot confidently discover worthwhile content inside StreamLine and therefore leave the platform to find recommendations elsewhere.
+
+Outcome &amp; metrics
+Strategic outcome: Increase retention by making StreamLine the trusted destination for content discovery rather than just a playback destination.
+Primary success metric: Increase Month 1 retention among Wanderers exposed to Spotlight-style curation from 64% to 79% (+15 percentage points). Why: Directly tied to the biggest business leak. Supported by existing Spotlight retention signals. Closely connected to churn reduction and LTV growth.
+Guardrail metric: 30+ minute session rate must not decline below the current baseline of 11%. Why: Prevents artificially boosting retention without creating real viewer engagement. Ensures users are actually finding and watching content. Homepage → Playback conversion must remain at or above 29%.
+Decision window: 30 days (one complete Month 0 → Month 1 retention cycle).</div></details></div><span class="slide-tag">02 / STRATEGY</span></section>
+
+<section id="research" aria-label="Slide 6 Research"><div class="wrap"><div class="topline"><div><div class="eyebrow">Slide 6 · Research</div><h2>The status quo to beat is <span class="pink">leaving StreamLine.</span></h2></div><div class="num">MODULE 2</div></div><div class="grid g2"><div class="card hero-card"><div class="label">Current workaround</div><h3>“I have to leave StreamLine to figure out what to watch before I can use StreamLine.”</h3><div class="pills" style="margin:18px 0"><span class="pill">Friends &amp; family</span><span class="pill">Social media</span><span class="pill">Film review sites</span><span class="pill">Curated newsletters</span><span class="pill">Competitors</span><span class="pill">Top films articles</span></div><ol class="tight"><li>Ignore StreamLine recommendations.</li><li>Search external sources for viewing suggestions.</li><li>Create a shortlist of promising titles.</li><li>Check whether titles are available on StreamLine.</li><li>Return only to watch a specific title.</li></ol></div><div class="card"><div class="label">Competitive advantage</div><ul><li>Trusted human curation replaces external research and recommendation hunting.</li><li>Mood- and context-based discovery reduces decision time and browsing fatigue.</li><li>Discovery, decision, and viewing happen in one experience instead of multiple platforms.</li></ul><div class="callout"><p>“The 'Because you watched' row is a joke.”</p><p>“I trust a recommendation from a friend more than the algorithm.”</p></div></div></div><div class="journey"><div class="step"><b>1 · Intent</b>User opens StreamLine and wants to find something worth watching.</div><div class="step misery"><b>2 · Moment of misery</b>Recommendations feel repetitive and generic; confidence collapses.</div><div class="step"><b>3 · Notice</b>User notices the Spotlight Curated Rail on the homepage.</div><div class="step"><b>4 · Explore</b>User browses trusted recommendations with short explanations.</div><div class="step"><b>5 · Watch</b>User discovers a title and starts watching with confidence.</div><div class="step"><b>6 · Return</b>StreamLine consistently surfaces relevant content.</div></div><details class="modal-detail"><summary>Open full Persona &amp; Future-State Journey</summary><div class="detail-body">Persona &amp; Future-State Journey, Module 2
+
+Scenario: StreamLine Spotlight (B2C)
+
+Persona
+Role: A passionate viewer who actively seeks high-quality films and shows but no longer trusts StreamLine's recommendations.
+Goal: Discover hidden gems and personalized recommendations that match their tastes, mood, and viewing context.
+Friction: Recommendations feel repetitive and generic, forcing them to spend excessive time browsing without confidently choosing something to watch.
+
+Future-state journey map
+1. Guided Entry
+Action → Benefit: Select mood or viewing intent → Instantly narrow thousands of titles into relevant options.
+Internal state: "This feels tailored to what I want tonight."
+Pain point addressed: Choice overload and discovery fatigue.
+
+2. Trusted Curation
+Action → Benefit: Explore editor-curated collections → Gain confidence in recommendation quality.
+Internal state: "These recommendations feel thoughtful and credible."
+Pain point addressed: Distrust of algorithmic recommendations.
+
+3. Confident Selection
+Action → Benefit: Choose from curated shortlists → Find hidden gems without endless browsing.
+Internal state: "I've found something worth watching."
+Pain point addressed: Long browsing sessions with no viewing outcome.
+
+4. Loyalty &amp; Advocacy
+Action → Benefit: Return for weekly curated picks → Build a habit of discovering through StreamLine.
+Internal state: "StreamLine helps me find great content consistently."
+Pain point addressed: Dependence on external recommendation sources.</div></details></div><span class="slide-tag">03 / RESEARCH</span></section>
+
+<section id="blueprint" aria-label="Slide 7 Blueprint"><div class="wrap"><div class="topline"><div><div class="eyebrow">Slide 7 · Blueprint</div><h2>Prove editorial trust in a <span class="teal">3-week sprint.</span></h2></div><a class="btn" href="https://streamline-spotlight-prototype.vercel.app/" target="_blank" rel="noopener noreferrer">View prototype ↗</a></div><div class="grid g4 roadmap tight"><div class="card now"><div class="label">Now · 3-week sprint</div><h3>A1 + A3</h3><ul><li><b>Spotlight Curated Rail</b><br>Directly replaces repetitive recommendations with trusted picks.</li><li><b>Hidden Gem Badge</b><br>Makes distinctive content visible.</li></ul></div><div class="card next"><div class="label">Next · 1–2 sprints</div><h3>A4 + A5 + A6</h3><ul><li>Mood-Based Entry Point</li><li>Personalized Spotlight Queue</li><li>Spotlight Digest Email</li></ul></div><div class="card later"><div class="label">Later · backlog</div><h3>A7</h3><ul><li>Curator Profiles</li><li>Build human authority if A1 proves itself successful.</li></ul></div><div class="card cut"><div class="label">Cut list</div><h3>A2 + A8 + A9 + A10</h3><ul><li>'Why You'll Love This' Label</li><li>Watch Party</li><li>Advanced Filter Engine</li><li>Offline Download</li></ul></div></div><div class="grid g3" style="margin-top:16px"><div class="card"><div class="label">Vision</div><p>Help Wanderers discover something worth watching in minutes through trusted human curation instead of repetitive algorithmic recommendations.</p></div><div class="card"><div class="label">Success metric</div><p><b>Increase Month 1 retention among Wanderers exposed to Spotlight from 64% to 79%.</b></p></div><div class="card"><div class="label">Measurement backbone</div><p>Track impression → title click → details view → playback, preserving <span class="mono">discoverySource</span> and <span class="mono">sessionId</span>.</p></div></div><details class="modal-detail"><summary>Open full roadmap + PRD highlights</summary><div class="detail-body">Feature Roadmap, Module 4 · StreamLine Spotlight
+Team: 2 engineers + 1 designer
+
+NOW, 3-week sprint
+A1 Spotlight Curated Rail, Directly replaces repetitive recommendations with trusted picks and tests the proven Spotlight retention signal.
+A3 Hidden Gem Badge, Makes distinctive content visible and reinforces the persona’s desire to find quality beyond trending titles.
+
+NEXT, following 1-2 sprints
+A4 Mood-Based Entry Point, Directly addresses contextual discovery, but mood taxonomy, content tagging, UX, and filtering exceed a safe sprint scope.
+A5 Personalized Spotlight Queue, Highly relevant to the persona, but recreates recommendation complexity before editorial trust is established.
+A6 Spotlight Digest Email, Re-engages Wanderers with trusted picks, but depends on personalization, messaging infrastructure, and attribution.
+
+LATER, backlog
+A7 Curator Profiles, Relevant if A1 proves itself succesful. Builds human authority, but following infrastructure is unnecessary until users value the core curated experience.
+
+Cut List
+A2 'Why You'll Love This' Label, Could reduce decision paralysis, but AI-generated reasoning risks low trust and adds complexity before curation is proven.
+A8 Watch Party (Spotlight), Adds substantial technical scope without addressing repetitive recommendations or individual discovery confidence.
+A9 Advanced Filter Engine, Adds browsing controls but increases effort and choice rather than providing trusted, decisive guidance.
+A10 Offline Download (Spotlight), Improves consumption convenience, not discovery, retention leakage, or the persona’s core moment of misery.
+
+StreamLine Spotlight Curated Rail
+Author: Me
+Status: Draft
+Target: High-Fidelity Prototype
+Persona: Disillusioned Curated Seeker
+
+User Story 1: Prominent Curated Discovery
+As a Disillusioned Curated Seeker, I want a curated content section on the homepage so that I can avoid browsing through repetitive recommendations.
+Acceptance Criteria: Spotlight is visible on the homepage without excessive scrolling. Spotlight is visually distinct from algorithmic recommendation rows. Spotlight contains only editorially selected titles.
+
+User Story 2: Focused Choice
+As a Disillusioned Curated Seeker, I want a small set of trusted recommendations so that I can choose something to watch quickly.
+Acceptance Criteria: Spotlight contains between 10 and 20 titles. Users can browse all Spotlight titles within a single horizontal rail. Spotlight titles are presented consistently.
+
+User Story 3: Measurable Engagement
+As a Product Team, I want to measure engagement with Spotlight so that I can evaluate whether curated discovery improves retention.
+Acceptance Criteria: Spotlight impressions are tracked. Spotlight title clicks are tracked. Spotlight title-details views are tracked. Playback starts originating from Spotlight are tracked. Spotlight-driven viewing is attributed separately from standard recommendation journeys. Spotlight attribution is preserved from title selection through playback within the same browsing session.
+
+Functional Requirements
+FR1 Dedicated Spotlight Rail. FR2 Editorially Curated Content. FR3 Focused Content Selection. FR4 Distinct Visual Treatment. FR5 Impression Tracking. FR6 Click and Details-View Tracking. FR7 Playback Tracking. FR8 Separate Spotlight Attribution. FR9 Attribution Persistence.
+
+MA6: Time-to-Discovery Measurement
+Title Details View Timestamp - Homepage Arrival Timestamp</div></details></div><span class="slide-tag">04 / BLUEPRINT</span></section>
+
+<section id="validation" aria-label="Slide 8 Validation"><div class="wrap"><div class="topline"><div><div class="eyebrow">Slide 8 · Validation</div><h2>A clean test of <span class="cyan">curation versus algorithm.</span></h2></div><div class="num">30-DAY READ</div></div><div class="grid g3"><div class="card hero-card"><div class="label">Hypothesis</div><p>I believe that A1 · Spotlight Curated Rail for Disillusioned Curated Seeker/Wanderer will result in help Wanderers discover something worth watching in minutes through trusted human curation instead of repetitive algorithmic recommendations., as measured by a 2-percentage-point change in Month 1 retention among Wanderers within 30-day observation window after sample enrolment.</p></div><div class="card"><div class="label">Experiment economics</div><div class="metric">64%</div><p>Baseline Month 1 retention</p><div class="meta"><span>MDE <strong>2pp</strong></span><span>Split <strong>50/50</strong></span><span>α <strong>p &lt; 0.05</strong></span></div></div><div class="card"><div class="label">Guardrails</div><div class="metric">≥11%</div><p>30+ minute session rate</p><p class="mono">Homepage → Playback ≥ 29%</p><p class="mono">8.927 per arm</p></div></div><div class="vs" style="margin-top:16px"><div class="card"><div class="label">Control A</div><h3>Algorithmic recommendation rails</h3><p>The current StreamLine homepage experience, with no editorially curated Spotlight rail.</p></div><div class="vsmark">VS</div><div class="card"><div class="label">Variant B</div><h3>Spotlight Curated Rail</h3><p>Replace one existing algorithmic recommendation rail with a hand-picked set of editorially curated titles.</p></div></div><div class="rules" style="margin-top:16px"><div class="rule ship"><b class="teal">SHIP</b><p>Month 1 retention improves by ≥ 2-percentage-point at p &lt; 0.05 and guardrails hold.</p></div><div class="rule iterate"><b class="cyan">ITERATE</b><p>Direction is positive but lift is below the MDE.</p></div><div class="rule kill"><b style="color:var(--pink)">KILL</b><p>Primary metric shows no improvement or moves negatively.</p></div></div><details class="modal-detail"><summary>Open full A/B Experiment Brief</summary><div class="detail-body">A/B Experiment Brief, StreamLine (B2C)
+
+Feature under test: A1 · Spotlight Curated Rail A hand-picked homepage content rail that bypasses the recommendation algorithm and presents trusted, editorially curated titles to help users quickly discover something worth watching.
+Persona: Disillusioned Curated Seeker/Wanderer
+Expected outcome: help Wanderers discover something worth watching in minutes through trusted human curation instead of repetitive algorithmic recommendations.
+Primary success metric: Month 1 retention among Wanderers
+Baseline rate: 64%
+Guardrail metric: 30+ minute session rate by ensuring it remains at or above 11%
+Guardrail boundary: ≥ 11%
+Second guardrail: Maintain Homepage → Playback conversion ≥ 29%.
+Minimum Detectable Effect: 2-percentage-point
+Sample size per arm: 8.927
+Traffic split: 50/50
+Test duration: 30-day observation window after sample enrolment
+Significance threshold: p &lt; 0.05
+
+Held constant (isolation check): Everything except the tested rail remains unchanged:
+User eligibility and Wanderer segmentation
+App version and performance
+Homepage layout and navigation
+Content catalogue
+Search functionality
+Playback experience
+Account functionality
+Onboarding
+Notifications and email communications
+Subscription pricing and promotions
+Tracking and measurement methodology
+Traffic allocation (50/50)
+
+Shipping criteria
+We will ship if Month 1 retention among Wanderers improves by ≥ 2-percentage-point at p &lt; 0.05 and 30+ minute session rate by ensuring it remains at or above 11% does not reach ≥ 11% after 30-day observation window after sample enrolment.
+We will iterate if direction is positive but lift is below the MDE.
+We will kill if the primary metric shows no improvement or moves negatively.
+The read date is fixed at the end of 30-day observation window after sample enrolment, no results reviewed before this date.</div></details></div><span class="slide-tag">05 / VALIDATION</span></section>
+
+<section id="launch" aria-label="Slide 9 Launch"><div class="wrap"><div class="topline"><div><div class="eyebrow">Slide 9 · Launch</div><h2>Targeted launch. <span class="accent">Behavior change.</span></h2></div><div class="pills"><span class="pill">Goal · Engagement</span><span class="pill">Tier · M (Targeted)</span><span class="pill">Audience · Existing subscribers</span></div></div><div class="grid g2"><div class="card hero-card"><div class="label">GTM strategy</div><h3>Spotlight Curated Rail (A1)</h3><p>A prominent, curated recommendation rail that surfaces a small set of trusted movie picks, helping users quickly find something worth watching without endless browsing.</p><div class="pills" style="margin-top:18px"><span class="pill">In-app homepage + onboarding</span><span class="pill">Email campaign</span><span class="pill">Push + re-engagement</span></div><div class="grid g3 tight" style="margin-top:18px"><div><b>Week 1–2</b><p>Beta</p></div><div><b>Week 3</b><p>Launch moment</p></div><div><b>Week 4+</b><p>Post-launch</p></div></div></div><div><div class="dashboard"><div class="dash"><div class="metric">M1</div><p>Wanderer Month 1 Retention Rate</p></div><div class="dash"><div class="metric">CTR</div><p>Spotlight Rail Click-Through Rate</p></div><div class="dash"><div class="metric">PLAY</div><p>Homepage-to-Play Conversion Rate</p></div></div><div class="callout" style="margin-top:16px;border-color:var(--pink);background:rgba(244,114,182,.08)"><div class="label" style="color:var(--pink)">Bad signal</div><p>High Spotlight impressions but low click-through and low viewing completion, indicating that the curated recommendations are not perceived as relevant or trustworthy.</p></div></div></div><div class="grid g4 tight" style="margin-top:16px"><div class="card"><div class="label">Product Manager</div><p>Launch coordination, success metrics, post-launch evaluation.</p></div><div class="card"><div class="label">UX Designer</div><p>Promotional creatives, onboarding assets, demo content.</p></div><div class="card"><div class="label">Engineering Lead</div><p>Rollout, instrumentation, launch monitoring.</p></div><div class="card"><div class="label">Support Lead</div><p>User-facing guidance and issue management.</p></div></div><details class="modal-detail"><summary>Open full GTM Strategy &amp; Success Dashboard</summary><div class="detail-body">GTM Strategy &amp; Success Dashboard (Module 6)
+
+Primary GTM goal: Engagement
+Why this goal? Spotlight is not a new product and does not require market awareness. Its purpose is to change user behavior inside StreamLine by helping users discover content faster and engage more frequently with the platform. Success depends on adoption and repeated use, not acquisition.
+Target audience: Existing StreamLine subscribers who regularly browse but struggle to choose content, particularly users exhibiting high browsing time and low content-start rates.
+
+Launch tier: M (Targeted)
+Justification: The feature impacts a meaningful segment of the existing user base and directly supports retention goals, but does not justify a large-scale external campaign. Remaining silent risks low feature discovery and slower adoption, while a focused launch can accelerate behavioral change among existing users.
+Launch. Although technically a feature release, Spotlight introduces a new discovery experience and user behavior. Without targeted communication and onboarding, many users may never understand its value.
+
+Enablement &amp; assets
+Product one-pager explaining Spotlight, target persona, and expected user benefits.
+Short demo video showing "browse fatigue" versus the Spotlight experience.
+Updated homepage guidance and onboarding copy.
+FAQ and support brief for Customer Support.
+Analytics dashboard tracking Spotlight impressions, clicks, play starts, and retention impact.
+Internal launch briefing for Marketing, Support, and Product teams.
+
+Budget &amp; resource gaps
+Minimal incremental budget required.
+Potential costs: Demo-video production; CRM/email campaign setup; Analytics dashboard implementation.
+
+Most likely post-launch decision: Iterate.
+Double-down trigger: Significant improvement in play-start conversion and retention.
+Iterate trigger: Strong visibility but moderate engagement.
+Deprioritize trigger: Low engagement despite multiple recommendation and presentation improvements.</div></details></div><span class="slide-tag">06 / LAUNCH</span></section>
+
+<section id="story" aria-label="Slide 10 Story"><div class="wrap"><div class="topline"><div><div class="eyebrow">Slide 10 · Story</div><h2>From feature ideas to <span class="violet">discovery trust.</span></h2></div><div class="num">REFLECTION</div></div><div class="grid g2"><div class="card hero-card"><div class="label">Friction points</div><p class="quote">The hardest part was avoiding solution bias and staying focused on the user's actual problem rather than jumping directly to features.</p><p>I was initially surprised by how many ideas seemed valuable but did not address the core discovery challenge.</p></div><div class="card"><div class="label">Aha moment</div><p class="quote">The breakthrough came when I centered the solution around building trust in discovery rather than creating more recommendation functionality.</p></div></div><div class="grid g2" style="margin-top:16px"><div class="card"><div class="label">Key takeaway</div><p>The biggest learning was that successful product decisions start with a deep understanding of user needs and measurable outcomes, not feature brainstorming.</p></div><div class="card"><div class="label">What I would do next</div><p>If this were a real product initiative, the next step would be to launch an MVP of the Spotlight Curated Rail, validate its impact on retention and engagement, and use the results to guide future investments in personalization and content discovery.</p></div></div></div><span class="slide-tag">07 / STORY</span></section>
+
+<section id="submit" aria-label="Thank you and submit"><div class="wrap" style="text-align:center"><div class="eyebrow">Thank you</div><h1 style="margin:auto">Ready to put <span class="accent">discovery trust</span> to the test.</h1><p class="lead" style="margin:22px auto">StreamLine Spotlight · Product School Final Project</p><div class="pills" style="justify-content:center;margin:22px 0"><span class="pill">Torben Smedegaard</span><span class="pill">PM Cohort - September 2026</span></div><div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap"><a class="btn" href="https://github.com/TorbenSmedegaard/pm-final-project-TS" target="_blank" rel="noopener noreferrer">View repository ↗</a><a class="btn" style="background:var(--cyan)" href="https://streamline-spotlight-prototype.vercel.app/" target="_blank" rel="noopener noreferrer">View prototype ↗</a></div><div class="pill" style="margin-top:32px;border-color:var(--orange);color:#fdba74">Submit to the learning platform</div></div><span class="slide-tag">08 / SUBMIT</span></section>
+</main>
+<script>
+(()=>{const s=[...document.querySelectorAll('section')],dots=document.getElementById('dots'),progress=document.getElementById('progress');let current=0;s.forEach((x,i)=>{const b=document.createElement('button');b.className='dot';b.type='button';b.setAttribute('aria-label',`Go to slide ${i+1}: ${x.getAttribute('aria-label')}`);b.onclick=()=>x.scrollIntoView({behavior:'smooth'});dots.appendChild(b)});const ds=[...dots.children];function update(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max?scrollY/max*100:0)+'%';let best=0,dist=Infinity;s.forEach((x,i)=>{const d=Math.abs(x.getBoundingClientRect().top);if(d<dist){dist=d;best=i}});current=best;ds.forEach((d,i)=>d.classList.toggle('active',i===current))}function go(i){current=Math.max(0,Math.min(s.length-1,i));s[current].scrollIntoView({behavior:'smooth'})}addEventListener('scroll',update,{passive:true});addEventListener('resize',update);addEventListener('keydown',e=>{if(document.querySelector('details[open]')&&e.key==='Escape'){document.querySelectorAll('details[open]').forEach(d=>d.open=false);return}if(['ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();go(current+1)}if(['ArrowUp','PageUp'].includes(e.key)){e.preventDefault();go(current-1)}if(e.key==='Home'){e.preventDefault();go(0)}if(e.key==='End'){e.preventDefault();go(s.length-1)}if(e.key==='Escape'){e.preventDefault();go(0)}});update()})();
+</script>
+</body>
+</html>
